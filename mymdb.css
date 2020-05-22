@@ -1,0 +1,109 @@
+/*
+    Author: Jessmer John Palanca
+    Section: CSC337 Web Programming SPRING2019, Homework 10
+    Filename: mymdb.css
+    Description: The css file for mymdb.html
+*/
+body{
+    background-color: #dad9d4;
+    margin-top: 0;
+    font-family: Verdana;
+}
+
+#main{
+    position: relative;
+    background-color: white;
+    width: 60%;
+    margin-bottom: 5%;
+    box-shadow: 5px 5px 5px 5px gray;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+#main, #userInput, #result, fieldset{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topbanner, #botbanner{
+    background-image: url("banner-background.png");
+    background-repeat: repeat-x;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#topbanner {
+    position: relative;
+    height: 55px;
+}
+
+#content{
+    text-align: center;
+    height: auto;
+    width:100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+#content, #userInput, #main{
+    display: flex;
+    flex-direction: column;
+}
+
+#userInput{
+    width: 50%;
+}
+#botbanner{
+    position: relative;
+    height: 30px;
+    bottom: 0;
+}
+#result{
+    width: 80%;
+}
+table{
+    width: 100%;
+    font-size: 12pt;
+    border: 1px solid #dad9d4;
+    border-collapse:collapse;
+}
+
+.subtitle{
+    margin-bottom: 0;
+}
+td:first-child, th:first-child{
+    text-align: left;
+    width:1%;
+}
+td:last-child, th:last-child{
+    text-align: right;
+    width:1%;
+}
+tr:nth-child(even){
+    background-color: #dad9d4;
+}
+img{
+
+    margin-right: 5px;
+}
+fieldset{
+    width: 85%;
+    display: inline;
+    margin: 10px;
+}
+legend{
+    text-align: left;
+}
+::placeholder{
+    color: #dad9d4;
+    opacity: 1;
+}
+input{
+    padding: 1px;
+    box-shadow: 1px 1px inset;
+    width: 100px;
+}
+button{
+    box-shadow: 1px 1px 1px gray;
+}

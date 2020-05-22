@@ -1,0 +1,59 @@
+<!--
+Author: Jessmer John Palanca
+Section: CSC337 Web Programming SPRING2019, Homework 10
+Filename: mymdb.html
+Description: This is a webpage that lets the user search the actor's movies
+             and movies with Kevin Bacon. This webpage uses a database to query
+             for the movies.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="mymdb.css">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <script type="text/javascript" src="mymdb.js"></script>
+        <title>MyMDb</title>
+    </head>
+    <body>
+        <div id="main">
+            <div id="topbanner">
+                <img src="mymdb.png" alt="mymdb logo" id="logo">
+                <span>My Movie Database</span>
+            </div>
+            <div id="content">
+                <div id="intro">
+                    <h1>The One Degree of Kevin Bacon</h1>
+                    <p>Type in an actor's name to see if he/she was ever in a movie with Kevin Bacon!</p>
+                    <img src="kevin_bacon.jpg" alt="Kevin Bacon">
+                </div>
+                <div id="result">
+                    <p id="error"></p>
+                    <table id="table">
+
+                    </table>
+                </div>
+                <div id="userInput">
+                    <fieldset id="allMovies">
+                        <legend>All movies</legend>
+                        <input type="text" id="AMFirstName" placeholder="first name">
+                        <input type="text" id="AMLastName" placeholder="last name">
+                        <button type="button" id = "firstBtn" name="ActorMovies">go</button>
+                    </fieldset>
+                    <fieldset id="MoviesWithKB">
+                        <legend>Movies with Kevin Bacon</legend>
+                        <input type="text" id="AMKBFirstName" placeholder="first name">
+                        <input type="text" id="AMKBLastName" placeholder="last name">
+                        <button type="button" id = "secondBtn" name="MoviesWithKB">go</button>
+                    </fieldset>
+                </div>
+
+            </div>
+            <div id="botbanner">
+                <img src="w3c-html.png" alt="w3chtml">
+                <img src="w3c-css.png" alt="w3ccss">
+            </div>
+        </div>
+    </body>
+</html>
